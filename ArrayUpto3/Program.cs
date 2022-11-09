@@ -1,7 +1,7 @@
 ﻿string[] firstArray = new string[6] { "12345", "23", "GeekBrains", "computer science", "world", "-45" };
 string[] secondArray = new string[firstArray.Length];
 
-FillSecondArray(firstArray, econdArray);
+FillSecondArray(firstArray, secondArray);
 PrintArray(secondArray);
 
 void FillSecondArray(string[] array1, string[] array2)
@@ -17,3 +17,11 @@ void FillSecondArray(string[] array1, string[] array2)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
